@@ -1,2 +1,9 @@
-cinst Microsoft-Hyper-V -source windowsfeatures
-cinst Microsoft-Hyper-V-Management-PowerShell -source windowsfeatures
+cinst firefox
+cinst googlechrome
+cinst jre8
+cinst winrar
+cinst 7zip.install 
+cinst -ysilverlight
+cinst -y ammyy-admin
+cinst -y Paint.Net
+cinst
