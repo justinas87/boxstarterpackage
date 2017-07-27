@@ -7,6 +7,7 @@ Set-ExplorerOptions - showHiddenFilesFolderDrives -showProtectedOSFIles -showFil
 Enable-RemoteDesktop
 
 CINST Boxstarter
+cinst -y wgetwg
 cinst -y firefox
 cinst -y googlechrome
 cinst -y jre8
@@ -17,4 +18,6 @@ cinst -y ammyy-admin
 cinst -y Paint.Net
 cinst -y flashplayerplugin
 cinst -y adobereader
-
+mkdir C:\scan
+#komandos
+wget https://raw.githubusercontent.com/justinas87/boxstarterpackage/master/DVS.URL -O c:\dvs.url
