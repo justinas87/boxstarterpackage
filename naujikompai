@@ -1,0 +1,2 @@
+cinst Microsoft-Hyper-V -source windowsfeatures
+cinst Microsoft-Hyper-V-Management-PowerShell -source windowsfeatures
