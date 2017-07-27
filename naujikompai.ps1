@@ -6,6 +6,7 @@ $Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a r
 Set-ExplorerOptions - showHiddenFilesFolderDrives -showProtectedOSFIles -showFileExtensions -EnableShowFullPathInTitleBar
 Enable-RemoteDesktop
 
+CINST Boxstarter
 cinst -y firefox
 cinst -y googlechrome
 cinst -y jre8
