@@ -18,3 +18,6 @@ cinst -y flashplayerplugin
 cinst -y adobereader
 cinst -y vlc
 cinst -y libreoffice
+# perkeitimas is WORKGROUP i DOMAIN
+# taipat reikia isbandyti -cred Domain02\Admin02 -passthru
+add-computer -domainname prs.local; #reikalingas restart | reikes pabandyti " ; restart-computer"
