@@ -1,7 +1,7 @@
 
 $Boxstarter.RebootOk=$true # leidziama restartuoti
-$Boxstarter.NoPassword=$false # Is this a machine with no login password?
-$Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a reboot
+$Boxstarter.NoPassword=$false # Jeigu kompas be passwordo ?
+$Boxstarter.AutoLogin=$true # Issaugo slaptazodi ir po restarto padaro auto login
 
 Set-ExplorerOptions - showHiddenFilesFolderDrives -showProtectedOSFIles -showFileExtensions -EnableShowFullPathInTitleBar
 Enable-RemoteDesktop
