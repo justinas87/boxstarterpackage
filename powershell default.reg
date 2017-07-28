@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\PowerShellHere]
+@="&PowerShell here"
+
+[HKEY_CLASSES_ROOT\Directory\shell\PowerShellHere\command]
+@="cmd.exe /c start \"PS\" powershell.exe -NoExit -Command \"cd \\\"%1\\\"\""
