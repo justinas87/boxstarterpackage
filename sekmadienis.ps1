@@ -1,56 +1,54 @@
-$Boxstarter.RebootOk=$true # Allow reboots?
-$Boxstarter.NoPassword=$false # Is this a machine with no login password?
-$Boxstarter.AutoLogin=$true # Save my password securely and auto-login after a reboot
 
+$Boxstarter.RebootOk=$false # Allow reboots?
+$Boxstarter.NoPassword=$false # Is this a machine with no login password?
+$Boxstarter.AutoLogin=$false # Save my password securely and auto-login after a rebo
 Set-ExplorerOptions - showHiddenFilesFolderDrives -showProtectedOSFIles -showFileExtensions -EnableShowFullPathInTitleBar
 Enable-RemoteDesktop
-
+# posh
+choco install powershell4
+choco install SourceCodePro
+choco install GitHub
+choco install TeraCopy
+choco install cyberduck
+choco install OptiPNG
+choco install javaruntime
+choco install java.jdk
+choco install winscp
+choco install heidisql
 # Dev Tools
-cinst -y atom
+cinst atom
+cinst rsat
+cinst putty
+cinst rsat
+cinst ccleaner
+cinst ccenhancer
+cinst sublimetext3
 cinst -y vscode
 cinst -y cmder
 cinst -y boot2docker
 cinst -y curl
 cinst -y diffmerge
-cinst -y fiddler
-cinst -y git.install
 cinst -y vim
 cinst -y virtualbox
-
-# Gaming
-cinst -y steam
-
+cinst 
 # Productivity
 cinst -y googlechrome
-cinst -y googledrive
 cinst -y flashplayerplugin
 cinst -y nuget.commandline
 cinst -y Paint.Net
-cinst -y putty
 cinst -y vlc
 cinst -y winrar
-cinst -y wox
-
 # Platforms
 cinst -y javaruntime
 cinst -y java.jdk
 cinst -y nodejs.install
 cinst -y python
-cinst -y ruby
-
 # Utilities
 cinst -y 7zip.install
 cinst -y boxstarter
 cinst -y wget
 cinst -y wput
 cinst -y wincommandpaste
-
-# Windows Updates
-Install-WindowsUpdate -AcceptEula
-
-# NPM Programs
-npm install -g yo
-npm install -g mocha
 
 # Atom Plugins
 apm install autocomplete-modules
@@ -90,3 +88,8 @@ apm install sync-settings
 apm install atom-ternjs
 apm install zen
 apm install atom-react-native-autocomplete
+#
+Install-ChocolateyPinnedTaskBarItem "$env:SystemRoot\system32\WindowsPowerShell\v1.0\powershell.exe"
+Install-ChocolateyPinnedTaskBarItem "$env:localappdata\Google\Chrome\Application\chrome.exe"
+# power shell
+Install-ChocolateyVsixPackage PowerShellTools http://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597/file/112013/6/PowerShellTools.vsix
