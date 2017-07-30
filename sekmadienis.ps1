@@ -4,6 +4,8 @@ $Boxstarter.NoPassword=$false # Is this a machine with no login password?
 $Boxstarter.AutoLogin=$false # Save my password securely and auto-login after a rebo
 Set-ExplorerOptions - showHiddenFilesFolderDrives -showProtectedOSFIles -showFileExtensions -EnableShowFullPathInTitleBar
 Enable-RemoteDesktop
+Update-ExecutionPolicy Unrestricted
+
 # posh
 choco install powershell4
 choco install SourceCodePro
