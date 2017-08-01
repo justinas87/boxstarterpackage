@@ -1,3 +1,5 @@
+#
+# START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/justinas87/boxstarterpackage/master/vadokliai.ps1
 $Boxstarter.RebootOk=$false # Allow reboots?
 $Boxstarter.NoPassword=$false # Is this a machine with no login password?
 $Boxstarter.AutoLogin=$false # Save my password securely and auto-login after a rebo
