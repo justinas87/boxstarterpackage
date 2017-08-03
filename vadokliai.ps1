@@ -13,6 +13,7 @@ choco install ccleaner
 choco install flashplayerplugin
 choco install Paint.Net
 choco install vlc
+choco install wget
 choco install firefox
 choco install googlechrome
 choco install powershell4
@@ -25,4 +26,7 @@ choco install libreoffice
 choco install produkey.install 
 choco install ammyy-admin
 
+mkdir c:\scan
+wget https://raw.githubusercontent.com/justinas87/boxstarterpackage/master/powershell%20default.reg -O C:\scan\default_powershell.reg
+wget https://raw.githubusercontent.com/justinas87/boxstarterpackage/master/DVS.URL -O C:\scan\DVS.url
 add-computer -domainname prs.local; #reikalingas restart | reikes pabandyti " ; restart-computer"
