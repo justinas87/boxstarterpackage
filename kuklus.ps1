@@ -5,6 +5,7 @@ cinst windirstat
 cinst sysinternals
 cinst paint.ne
 cinst putty
+cinst hackfont
 cinst coretemp
 cinst jdk7
 cinst filezilla
